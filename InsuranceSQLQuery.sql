@@ -51,3 +51,12 @@ VALUES
 (8, 'Balanced Fund', 15000.75, '2024-03-05'),
 (9, 'Income Fund', 8000.25, '2024-04-20'),
 (10, 'Index Fund', 30000.00, '2024-05-12');
+
+--2.2 Inserting data into InsuranceBenefit
+INSERT INTO InsuranceBenefit (InsuranceBenefitid, benefit_type, benefit_status, benefitinception_date)
+VALUES
+(1, 'Life Cover', 1.00, '2024-01-01'),
+(2, 'Disability Cover', 0.00, '2024-02-15'),
+(3, 'Funeral Benefit', 1.00, '2024-03-10'),
+(4, 'Critical Illness', 1.00, '2024-04-05'),
+(5, 'Hospital Cash Plan', 0.00, '2024-05-20');

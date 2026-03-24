@@ -75,3 +75,12 @@ VALUES
 (8, 'Accident Claim', 1, '2024-04-07'),
 (9, 'Health Claim', 0, '2024-04-20'),
 (10, 'Life Claim', 1, '2024-05-02');
+
+----2.3 Inserting data into Beneficiary
+INSERT INTO Beneficiary (Beneficiaryid, beneficiary_name, beneficiary_age, beneficiary_type)
+VALUES
+(1, 'John Smith', 35, 'Spouse'),
+(2, 'Emily Johnson', 12, 'Child'),
+(3, 'Michael Brown', 40, 'Parent'),
+(4, 'Sophia Davis', 28, 'Spouse'),
+(5, 'Oliver Wilson', 5, 'Child');

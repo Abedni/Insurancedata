@@ -27,7 +27,7 @@ CREATE TABLE Beneficiary (
     beneficiary_age int,
     beneficiary_type varchar(100),
 );
---Create a  InsuranceMaster
+--1.5 Create a  InsuranceMaster
 CREATE TABLE InsuranceMaster (
    InsuranceMasterid INT PRIMARY KEY,
     premium_amount int,
@@ -43,3 +43,11 @@ CREATE TABLE InsuranceMaster (
     FOREIGN KEY (Beneficiaryid) REFERENCES Beneficiary(Beneficiaryid)
 );
 
+--2.1 Inserting data into Fund
+INSERT INTO Fund (fundid, fund_name, fund_amount, fund_date)
+VALUES
+(6, 'Growth Fund', 10000.50, '2024-01-15'),
+(7, 'Equity Fund', 25000.00, '2024-02-10'),
+(8, 'Balanced Fund', 15000.75, '2024-03-05'),
+(9, 'Income Fund', 8000.25, '2024-04-20'),
+(10, 'Index Fund', 30000.00, '2024-05-12');

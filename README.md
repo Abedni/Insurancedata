@@ -4,7 +4,7 @@
 
 # 
 
-# This project implements a relational database for an Insurance Management System. The database consists of multiple tables representing funds, insurance benefits, claims, beneficiaries, and the insurance master records. All tables are linked using foreign key constraints to ensure data integrity.
+###### This project implements a relational database for an Insurance Management System. The database consists of multiple tables representing funds, insurance benefits, claims, beneficiaries, and the insurance master records. All tables are linked using foreign key constraints to ensure data integrity.
 
 
 

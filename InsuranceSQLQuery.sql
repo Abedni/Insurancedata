@@ -175,3 +175,11 @@ VALUES
 (3, 1000, '2024-03-05', 'Monthly', 3, 3, 3, 3),
 (4, 1800, '2024-04-20', 'Annually', 4, 4, 4, 4),
 (5, 2000, '2024-05-12', 'Monthly', 5, 5, 5, 5);
+
+
+--sql query for joining all the tables
+select *
+from Fund inner join InsuranceBenefit on fund.fundid=InsuranceBenefit.InsuranceBenefitid
+inner join Beneficiary on Beneficiary.Beneficiaryid=InsuranceBenefit.InsuranceBenefitid 
+inner join ClaimRegister on ClaimRegister.ClaimRegisterid=fund.fundid
+inner join InsuranceMaster on InsuranceMaster.InsuranceMasterid=ClaimRegister.ClaimRegisterid

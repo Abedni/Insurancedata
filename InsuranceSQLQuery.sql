@@ -60,3 +60,18 @@ VALUES
 (3, 'Funeral Benefit', 1.00, '2024-03-10'),
 (4, 'Critical Illness', 1.00, '2024-04-05'),
 (5, 'Hospital Cash Plan', 0.00, '2024-05-20');
+
+----2.2 Inserting data into ClaimRegister
+
+INSERT INTO ClaimRegister (ClaimRegisterid, claim_type, claim_status, claim_date)
+VALUES
+(1, 'Accident Claim', 0, '2024-01-05'),
+(2, 'Health Claim', 1, '2024-01-10'),
+(3, 'Life Claim', 2, '2024-01-15'),
+(4, 'Disability Claim', 1, '2024-02-01'),
+(5, 'Funeral Claim', 0, '2024-02-12'),
+(6, 'Critical Illness Claim', 1, '2024-03-03'),
+(7, 'Hospital Claim', 2, '2024-03-18'),
+(8, 'Accident Claim', 1, '2024-04-07'),
+(9, 'Health Claim', 0, '2024-04-20'),
+(10, 'Life Claim', 1, '2024-05-02');

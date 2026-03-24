@@ -91,3 +91,18 @@ DROP TABLE IF EXISTS Beneficiary;
 DROP TABLE IF EXISTS ClaimRegister;
 DROP TABLE IF EXISTS InsuranceBenefit;
 DROP TABLE IF EXISTS Fund;
+
+CREATE TABLE Fund (
+    fundid INT PRIMARY KEY,
+    fund_name VARCHAR(100) NOT NULL,
+    fund_amount DECIMAL(10,2),
+    fund_date DATE
+);
+
+INSERT INTO Fund (fundid, fund_name, fund_amount, fund_date)
+VALUES
+(1, 'Growth Fund', 10000.50, '2024-01-15'),
+(2, 'Equity Fund', 25000.00, '2024-02-10'),
+(3, 'Balanced Fund', 15000.75, '2024-03-05'),
+(4, 'Income Fund', 8000.25, '2024-04-20'),
+(5, 'Index Fund', 30000.00, '2024-05-12');

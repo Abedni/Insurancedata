@@ -28,7 +28,7 @@ CREATE TABLE Beneficiary (
     beneficiary_type varchar(100),
 );
 --1.5 Create a  InsuranceMaster
-CREATE TABLE InsuranceMaster (
+CREATE TABLE InsuranceMasterr (
    InsuranceMasterid INT PRIMARY KEY,
     premium_amount int,
     inception_date date,
@@ -44,13 +44,13 @@ CREATE TABLE InsuranceMaster (
 );
 
 --2.1 Inserting data into Fund
-INSERT INTO Fund (fundid, fund_name, fund_amount, fund_date)
+iNSERT INTO Fund (fundid, fund_name, fund_amount, fund_date)
 VALUES
-(6, 'Growth Fund', 10000.50, '2024-01-15'),
-(7, 'Equity Fund', 25000.00, '2024-02-10'),
-(8, 'Balanced Fund', 15000.75, '2024-03-05'),
-(9, 'Income Fund', 8000.25, '2024-04-20'),
-(10, 'Index Fund', 30000.00, '2024-05-12');
+(1, 'Growth Fund', 10000.50, '2024-01-15'),
+(2, 'Equity Fund', 25000.00, '2024-02-10'),
+(3, 'Balanced Fund', 15000.75, '2024-03-05'),
+(4, 'Income Fund', 8000.25, '2024-04-20'),
+(5, 'Index Fund', 30000.00, '2024-05-12');
 
 --2.2 Inserting data into InsuranceBenefit
 INSERT INTO InsuranceBenefit (InsuranceBenefitid, benefit_type, benefit_status, benefitinception_date)
@@ -65,7 +65,7 @@ VALUES
 
 INSERT INTO ClaimRegister (ClaimRegisterid, claim_type, claim_status, claim_date)
 VALUES
-(1, 'Accident Claim', 0, '2024-01-05'),
+(1, 'Accident Claim', 1, '2024-01-05'),
 (2, 'Health Claim', 1, '2024-01-10'),
 (3, 'Life Claim', 2, '2024-01-15'),
 (4, 'Disability Claim', 1, '2024-02-01'),
@@ -84,3 +84,10 @@ VALUES
 (3, 'Michael Brown', 40, 'Parent'),
 (4, 'Sophia Davis', 28, 'Spouse'),
 (5, 'Oliver Wilson', 5, 'Child');
+
+--DROP ALL THE TABLES
+DROP TABLE IF EXISTS InsuranceMasterr;
+DROP TABLE IF EXISTS Beneficiary;
+DROP TABLE IF EXISTS ClaimRegister;
+DROP TABLE IF EXISTS InsuranceBenefit;
+DROP TABLE IF EXISTS Fund;
